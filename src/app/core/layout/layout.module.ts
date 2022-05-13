@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MenuModule } from './menu/menu.module';
 
+import { ToolbarModule } from './toolbar/toolbar.module';
 
 
 @NgModule({
@@ -10,7 +10,7 @@ import { MenuModule } from './menu/menu.module';
     CommonModule
   ],
   exports: [
-    MenuModule
+    ToolbarModule
   ]
 })
 export class LayoutModule { }

@@ -12,15 +12,14 @@
 
 
         <mat-nav-list>
-            <div *ngFor="let section of sections">
-                <a mat-list-item href="#{{section.id}}">{{section.title}}</a>
-            </div>
+            <button mat-list-item>Home</button>
+            <button mat-list-item>About</button>
         </mat-nav-list>
 
     </mat-sidenav>
     <mat-sidenav-content>
         <mat-toolbar color="primary">
-            <mat-icon>home</mat-icon>
+            <mat-icon>android</mat-icon>
             <span class="spacer"></span>
             <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
                 *ngIf="isHandset$ | async">
@@ -28,9 +27,8 @@
             </button>
 
             <div *ngIf="!(isHandset$ | async)">
-                <ng-container *ngFor="let section of sections">
-                    <a href="#{{section.id}}">{{section.title}}</a>
-                </ng-container>
+                <button mat-button>Home</button>
+                <button mat-button>About</button>
             </div>
         </mat-toolbar>
 

@@ -5,22 +5,11 @@ import { map, shareReplay } from 'rxjs/operators';
 
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  selector: 'app-toolbar',
+  templateUrl: './toolbar.component.html',
+  styleUrls: ['./toolbar.component.scss']
 })
-export class MenuComponent {
-
-  sections = [
-    {
-      id: 'quienes',
-      title: 'Quiénes somos',
-    },
-    {
-      id: 'hacemos',
-      title: 'Qué hacemos',
-    }
-  ];
+export class ToolbarComponent {
 
   isHandset$: Observable<boolean> = this.breakpointObserver
     // .observe(Breakpoints.Handset)

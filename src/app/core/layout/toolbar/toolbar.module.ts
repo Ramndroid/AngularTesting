@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MenuComponent } from './component/menu.component';
+import { ToolbarComponent } from './component/toolbar.component';
 
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -12,7 +12,7 @@ import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
-    MenuComponent
+    ToolbarComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +24,7 @@ import { MatListModule } from '@angular/material/list';
     MatListModule
   ],
   exports: [
-    MenuComponent
+    ToolbarComponent
   ]
 })
-export class MenuModule { }
+export class ToolbarModule { }
