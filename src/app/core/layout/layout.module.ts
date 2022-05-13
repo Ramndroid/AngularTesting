@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ToolbarModule } from './toolbar/toolbar.module';
+import { FooterModule } from './footer/footer.module';
 
 
 @NgModule({
@@ -10,7 +11,8 @@ import { ToolbarModule } from './toolbar/toolbar.module';
     CommonModule
   ],
   exports: [
-    ToolbarModule
+    ToolbarModule,
+    FooterModule
   ]
 })
 export class LayoutModule { }

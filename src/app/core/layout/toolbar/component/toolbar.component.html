@@ -12,8 +12,12 @@
 
 
         <mat-nav-list>
-            <button mat-list-item>Home</button>
-            <button mat-list-item>About</button>
+            <div routerLinkActive="nav-bar-on" [routerLinkActiveOptions]="{exact: true}">
+                <a mat-list-item routerLink="">Home</a>
+            </div>
+            <div routerLinkActive="nav-bar-on">
+                <a mat-list-item routerLink="/about">About</a>
+            </div>
         </mat-nav-list>
 
     </mat-sidenav>
@@ -27,8 +31,10 @@
             </button>
 
             <div *ngIf="!(isHandset$ | async)">
-                <button mat-button>Home</button>
-                <button mat-button>About</button>
+
+                <button mat-button routerLink="" routerLinkActive="toolbar-on"
+                    [routerLinkActiveOptions]="{exact: true}">Home</button>
+                <button mat-button routerLink="/about" routerLinkActive="toolbar-on">About</button>
             </div>
         </mat-toolbar>
 

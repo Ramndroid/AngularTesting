@@ -9,7 +9,7 @@ const routes: Routes = [
     component: HomePageComponent
   },
   {
-    path: '',
+    path: 'about',
     component: AboutPageComponent
   }
 ];
